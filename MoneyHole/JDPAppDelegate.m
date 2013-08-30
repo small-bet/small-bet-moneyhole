@@ -14,8 +14,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-
-    [[SBSmallbetManager defaultManager] setSandboxKey:<#small-bet sandbox key that you get from our website#> andProductionKey:nil];
+    //this is all you need to do sto start using small-bet in your app.
+    [[SBSmallbetManager defaultManager] setSandboxKey:<#small-bet sandbox key that you get from http://small-bet.com#> andProductionKey:nil];
         
     [self.window makeKeyAndVisible];
     return YES;
@@ -49,7 +49,12 @@
 }
 
 #pragma mark - URL handling
-
+/**
+ If you add this code here the smallbet SDK will let you know the challenge the user tapped on when we launch your app from a URL.
+ You will recieve a SBApplicationDidOpenChallengeURLNotification
+ from the NSNotificationCenter
+ The sender of the notification will be an instance of NSString containing the pertinent challenge identifier.
+ */
 -(BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation{
     return [[SBSmallbetManager defaultManager] application:application openURL:url sourceApplication:sourceApplication annotation:annotation];
 }
