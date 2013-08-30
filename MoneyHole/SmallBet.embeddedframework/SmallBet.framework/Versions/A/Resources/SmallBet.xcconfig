@@ -1,0 +1,2 @@
+OTHER_LDFLAGS=$(inherited) -lz -lxml2 -ObjC -fobjc-arc -framework UIKit -framework MobileCoreServices -framework SystemConfiguration -framework AddressBook -framework AddressBookUI -framework Security -framework MessageUI -weak_framework Social -framework Twitter
+GCC_PREPROCESSOR_DEFINITIONS = _AFNETWORKING_PIN_SSL_CERTIFICATES_=1 $(inherited)

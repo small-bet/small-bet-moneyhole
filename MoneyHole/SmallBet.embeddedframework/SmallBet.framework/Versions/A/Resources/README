@@ -1,0 +1,58 @@
+Small-Bet SDK
+
+Requirements:
+=====================================================
+
+Xcode 4.6 or greater with clang
+iOS Deployment target: iOS 5.1
+
+
+Installation instructions:
+=====================================================
+
+1) Drag SmallBet.embeddedframework folder into your Xcode project
+2) Add AFNetworking to your project (https://github.com/AFNetworking/AFNetworking) (>=1.3)
+3) Select your project in the project navigator, select info and then in configurations select the SmallBet.xcconfig from the drop down for each build configuration you have. (usually debug and release)
+
+
+Sign Up To Small-Bet as a Developer:
+=====================================================
+Welcome to developing with Small-Bet. To sign up to small bet please visit
+
+http://www-sandbox.small-bet.com/developers/signin/new
+
+Register an application to get your sandbox application key
+In your app delegate, in application:didFinishLaunchingWithOptions: call [[[SBSmallbetManager defaultManager] setSandboxKey:andProductionKey:]
+You wont get a production key until you complete registration in our live environment. In the mean time pass nil to the production key arguement.
+
+
+PayPal
+=====================================================
+Small-Bet currently uses paypal to transfer wagers between players.
+
+While developing in our sandbox you will need demo paypal account credentials to create
+smallbet accounts with paypal preapprovals. A player cannot log into the service without
+a paypal pre-approval.
+
+Here are some accounts you can use to do this:
+
+Email: smallbet_challenger@example.com
+PW: DZ8vtqh9nYrTwV
+
+Email: smallbet_challenged_player@example.com
+PW: 67UWsWjjZopLuq
+
+NB: Logging into the PayPal sandbox site (https://www.sandbox.paypal.com) is not possible with these accounts.
+
+
+Support
+=====================================================
+We value your feedback and support.
+
+To send us feedback please email
+sbfeedback@pxi.io
+
+
+Hints:
+=====================================================
+You can run appleDoc across the public headers to generate Apple style documentation.

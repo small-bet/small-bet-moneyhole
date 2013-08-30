@@ -71,6 +71,13 @@
 		5D9684021757BD1B008BEAB9 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D9684011757BD1B008BEAB9 /* icon.png */; };
 		5D96840D1758DC9D008BEAB9 /* JDPLoadingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D96840C1758DC9D008BEAB9 /* JDPLoadingCell.m */; };
 		5D96840E1758DC9D008BEAB9 /* JDPLoadingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D96840C1758DC9D008BEAB9 /* JDPLoadingCell.m */; };
+		5DA27AD517D0F1F90072C500 /* ACKNOWLEDGEMENTS in Resources */ = {isa = PBXBuildFile; fileRef = 5DA27ACE17D0F1F90072C500 /* ACKNOWLEDGEMENTS */; };
+		5DA27AD617D0F1F90072C500 /* CHANGES in Resources */ = {isa = PBXBuildFile; fileRef = 5DA27ACF17D0F1F90072C500 /* CHANGES */; };
+		5DA27AD717D0F1F90072C500 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 5DA27AD017D0F1F90072C500 /* README */; };
+		5DA27AD817D0F1F90072C500 /* SmallBet.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5DA27AD117D0F1F90072C500 /* SmallBet.bundle */; };
+		5DA27AD917D0F1F90072C500 /* SmallBet.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 5DA27AD217D0F1F90072C500 /* SmallBet.xcconfig */; };
+		5DA27ADA17D0F1F90072C500 /* VERSION in Resources */ = {isa = PBXBuildFile; fileRef = 5DA27AD317D0F1F90072C500 /* VERSION */; };
+		5DA27ADB17D0F1F90072C500 /* SmallBet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DA27AD417D0F1F90072C500 /* SmallBet.framework */; };
 		5DBA8BB11757711E0064CD95 /* JDPCreditsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DBA8BAF1757711E0064CD95 /* JDPCreditsViewController.m */; };
 		5DBA8BB21757711E0064CD95 /* JDPCreditsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DBA8BAF1757711E0064CD95 /* JDPCreditsViewController.m */; };
 		5DBA8BB31757711E0064CD95 /* JDPCreditsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DBA8BB01757711E0064CD95 /* JDPCreditsViewController.xib */; };
@@ -201,6 +208,13 @@
 		5D9684031757BEA3008BEAB9 /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
 		5D96840B1758DC9D008BEAB9 /* JDPLoadingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDPLoadingCell.h; sourceTree = "<group>"; };
 		5D96840C1758DC9D008BEAB9 /* JDPLoadingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDPLoadingCell.m; sourceTree = "<group>"; };
+		5DA27ACE17D0F1F90072C500 /* ACKNOWLEDGEMENTS */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ACKNOWLEDGEMENTS; sourceTree = "<group>"; };
+		5DA27ACF17D0F1F90072C500 /* CHANGES */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CHANGES; sourceTree = "<group>"; };
+		5DA27AD017D0F1F90072C500 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		5DA27AD117D0F1F90072C500 /* SmallBet.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SmallBet.bundle; sourceTree = "<group>"; };
+		5DA27AD217D0F1F90072C500 /* SmallBet.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = SmallBet.xcconfig; sourceTree = "<group>"; };
+		5DA27AD317D0F1F90072C500 /* VERSION */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = VERSION; sourceTree = "<group>"; };
+		5DA27AD417D0F1F90072C500 /* SmallBet.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SmallBet.framework; sourceTree = "<group>"; };
 		5DBA8BAE1757711E0064CD95 /* JDPCreditsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDPCreditsViewController.h; sourceTree = "<group>"; };
 		5DBA8BAF1757711E0064CD95 /* JDPCreditsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDPCreditsViewController.m; sourceTree = "<group>"; };
 		5DBA8BB01757711E0064CD95 /* JDPCreditsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JDPCreditsViewController.xib; sourceTree = "<group>"; };
@@ -249,6 +263,7 @@
 				5D20427B172942090070AB94 /* UIKit.framework in Frameworks */,
 				5D20427D172942090070AB94 /* Foundation.framework in Frameworks */,
 				5D20427F172942090070AB94 /* CoreGraphics.framework in Frameworks */,
+				5DA27ADB17D0F1F90072C500 /* SmallBet.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,8 +326,8 @@
 				5D2042B6172968270070AB94 /* MainWindow.xib */,
 				5D204289172942090070AB94 /* JDPAppDelegate.h */,
 				5D20428A172942090070AB94 /* JDPAppDelegate.m */,
-				5D2042B9172968360070AB94 /* Model */,
-				5D2042B81729682E0070AB94 /* View */,
+				5D2042B9172968360070AB94 /* Model (No small-bet related code needed here) */,
+				5D2042B81729682E0070AB94 /* View (also nothing small-bet specific) */,
 				5D2042BA1729683B0070AB94 /* Controller */,
 				5D204281172942090070AB94 /* Supporting Files */,
 			);
@@ -353,7 +368,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		5D2042B81729682E0070AB94 /* View */ = {
+		5D2042B81729682E0070AB94 /* View (also nothing small-bet specific) */ = {
 			isa = PBXGroup;
 			children = (
 				5D2BDBB3172E94D90020C761 /* UIButton+theme.h */,
@@ -368,10 +383,10 @@
 				5DBA8BD4175788920064CD95 /* JDPMoneyEmitterView.h */,
 				5DBA8BD5175788920064CD95 /* JDPMoneyEmitterView.m */,
 			);
-			name = View;
+			name = "View (also nothing small-bet specific)";
 			sourceTree = "<group>";
 		};
-		5D2042B9172968360070AB94 /* Model */ = {
+		5D2042B9172968360070AB94 /* Model (No small-bet related code needed here) */ = {
 			isa = PBXGroup;
 			children = (
 				5D2042FC172978CE0070AB94 /* JDPGame.h */,
@@ -379,7 +394,7 @@
 				5D204329172991B30070AB94 /* JDPFingerGestureRecognizer.h */,
 				5D20432A172991B30070AB94 /* JDPFingerGestureRecognizer.m */,
 			);
-			name = Model;
+			name = "Model (No small-bet related code needed here)";
 			sourceTree = "<group>";
 		};
 		5D2042BA1729683B0070AB94 /* Controller */ = {
@@ -388,43 +403,44 @@
 				5D2042BE172969410070AB94 /* JDPMainViewController.h */,
 				5D2042BF172969410070AB94 /* JDPMainViewController.m */,
 				5D2042C0172969410070AB94 /* JDPMainViewController.xib */,
-				5D2042C8172969D30070AB94 /* Main Menu */,
-				5D2042DB17296DA60070AB94 /* Challenge View Controllers */,
-				5D2042EC17296E3A0070AB94 /* Game View Controller */,
-				5DBA8BAD175771000064CD95 /* Credits View Controller */,
+				5D2042C8172969D30070AB94 /* Main Menu (small-bet login and game loading) */,
+				5D2042DB17296DA60070AB94 /* Challenge View Controllers (all small-bet related) */,
+				5D2042EC17296E3A0070AB94 /* Game View Controller (Submitting Scores) */,
+				5DBA8BAD175771000064CD95 /* Credits View Controller (nothing small-bet specific) */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
 		};
-		5D2042C8172969D30070AB94 /* Main Menu */ = {
+		5D2042C8172969D30070AB94 /* Main Menu (small-bet login and game loading) */ = {
 			isa = PBXGroup;
 			children = (
 				5D2042C3172969CB0070AB94 /* JDPMenuViewController.h */,
 				5D2042C4172969CB0070AB94 /* JDPMenuViewController.m */,
 				5D2042C5172969CB0070AB94 /* JDPMenuViewController.xib */,
 			);
-			name = "Main Menu";
+			name = "Main Menu (small-bet login and game loading)";
 			sourceTree = "<group>";
 		};
 		5D2042C917296CE20070AB94 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				5DA27ACC17D0F1F90072C500 /* SmallBet.embeddedframework */,
 				5DC750C9174559E8003BA8E2 /* AFNetworking */,
 			);
 			name = Vendor;
 			path = MoneyHole;
 			sourceTree = "<group>";
 		};
-		5D2042DB17296DA60070AB94 /* Challenge View Controllers */ = {
+		5D2042DB17296DA60070AB94 /* Challenge View Controllers (all small-bet related) */ = {
 			isa = PBXGroup;
 			children = (
 				5D2043001729819F0070AB94 /* Creating Challenges */,
-				5D2042FF172981950070AB94 /* Viewing Challenges */,
+				5D2042FF172981950070AB94 /* Viewing Challenges (Just an example. You can use SBChallengesViewController) */,
 			);
-			name = "Challenge View Controllers";
+			name = "Challenge View Controllers (all small-bet related)";
 			sourceTree = "<group>";
 		};
-		5D2042EC17296E3A0070AB94 /* Game View Controller */ = {
+		5D2042EC17296E3A0070AB94 /* Game View Controller (Submitting Scores) */ = {
 			isa = PBXGroup;
 			children = (
 				5D2042EE17296E650070AB94 /* JDPGameViewController.h */,
@@ -434,7 +450,7 @@
 				5D219048172FCB7400A208CA /* JDPGameEndViewController.m */,
 				5D219049172FCB7400A208CA /* JDPGameEndViewController.xib */,
 			);
-			name = "Game View Controller";
+			name = "Game View Controller (Submitting Scores)";
 			sourceTree = "<group>";
 		};
 		5D2042FB172974750070AB94 /* Images */ = {
@@ -454,7 +470,7 @@
 			name = Images;
 			sourceTree = "<group>";
 		};
-		5D2042FF172981950070AB94 /* Viewing Challenges */ = {
+		5D2042FF172981950070AB94 /* Viewing Challenges (Just an example. You can use SBChallengesViewController) */ = {
 			isa = PBXGroup;
 			children = (
 				5D20432C172995D90070AB94 /* JDPChallengeSelectionDelegate.h */,
@@ -465,7 +481,7 @@
 				5D2042E817296E2C0070AB94 /* JDPChallengeStatusViewController.m */,
 				5D2042E917296E2C0070AB94 /* JDPChallengeStatusViewController.xib */,
 			);
-			name = "Viewing Challenges";
+			name = "Viewing Challenges (Just an example. You can use SBChallengesViewController)";
 			sourceTree = "<group>";
 		};
 		5D2043001729819F0070AB94 /* Creating Challenges */ = {
@@ -502,14 +518,36 @@
 			name = Backgrounds;
 			sourceTree = "<group>";
 		};
-		5DBA8BAD175771000064CD95 /* Credits View Controller */ = {
+		5DA27ACC17D0F1F90072C500 /* SmallBet.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				5DA27ACD17D0F1F90072C500 /* Resources */,
+				5DA27AD417D0F1F90072C500 /* SmallBet.framework */,
+			);
+			path = SmallBet.embeddedframework;
+			sourceTree = "<group>";
+		};
+		5DA27ACD17D0F1F90072C500 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5DA27ACE17D0F1F90072C500 /* ACKNOWLEDGEMENTS */,
+				5DA27ACF17D0F1F90072C500 /* CHANGES */,
+				5DA27AD017D0F1F90072C500 /* README */,
+				5DA27AD117D0F1F90072C500 /* SmallBet.bundle */,
+				5DA27AD217D0F1F90072C500 /* SmallBet.xcconfig */,
+				5DA27AD317D0F1F90072C500 /* VERSION */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5DBA8BAD175771000064CD95 /* Credits View Controller (nothing small-bet specific) */ = {
 			isa = PBXGroup;
 			children = (
 				5DBA8BAE1757711E0064CD95 /* JDPCreditsViewController.h */,
 				5DBA8BAF1757711E0064CD95 /* JDPCreditsViewController.m */,
 				5DBA8BB01757711E0064CD95 /* JDPCreditsViewController.xib */,
 			);
-			name = "Credits View Controller";
+			name = "Credits View Controller (nothing small-bet specific)";
 			sourceTree = "<group>";
 		};
 		5DBA8BB51757721C0064CD95 /* Clouds by @scottdejonge */ = {
@@ -684,6 +722,12 @@
 				5D9683FE1757B643008BEAB9 /* Default.png in Resources */,
 				5D9684001757BCE9008BEAB9 /* icon@2x.png in Resources */,
 				5D9684021757BD1B008BEAB9 /* icon.png in Resources */,
+				5DA27AD517D0F1F90072C500 /* ACKNOWLEDGEMENTS in Resources */,
+				5DA27AD617D0F1F90072C500 /* CHANGES in Resources */,
+				5DA27AD717D0F1F90072C500 /* README in Resources */,
+				5DA27AD817D0F1F90072C500 /* SmallBet.bundle in Resources */,
+				5DA27AD917D0F1F90072C500 /* SmallBet.xcconfig in Resources */,
+				5DA27ADA17D0F1F90072C500 /* VERSION in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -803,6 +847,7 @@
 /* Begin XCBuildConfiguration section */
 		5D2042AD1729420A0070AB94 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DA27AD217D0F1F90072C500 /* SmallBet.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -833,6 +878,7 @@
 		};
 		5D2042AE1729420A0070AB94 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DA27AD217D0F1F90072C500 /* SmallBet.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
