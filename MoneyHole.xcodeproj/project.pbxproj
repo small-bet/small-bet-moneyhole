@@ -13,9 +13,6 @@
 		5D204285172942090070AB94 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5D204283172942090070AB94 /* InfoPlist.strings */; };
 		5D204287172942090070AB94 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D204286172942090070AB94 /* main.m */; };
 		5D20428B172942090070AB94 /* JDPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D20428A172942090070AB94 /* JDPAppDelegate.m */; };
-		5D20428D172942090070AB94 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D20428C172942090070AB94 /* Default.png */; };
-		5D20428F1729420A0070AB94 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D20428E172942090070AB94 /* Default@2x.png */; };
-		5D2042911729420A0070AB94 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D2042901729420A0070AB94 /* Default-568h@2x.png */; };
 		5D20429F1729420A0070AB94 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D20429E1729420A0070AB94 /* SenTestingKit.framework */; };
 		5D2042A01729420A0070AB94 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D20427A172942090070AB94 /* UIKit.framework */; };
 		5D2042A11729420A0070AB94 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D20427C172942090070AB94 /* Foundation.framework */; };
@@ -675,9 +672,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D204285172942090070AB94 /* InfoPlist.strings in Resources */,
-				5D20428D172942090070AB94 /* Default.png in Resources */,
-				5D20428F1729420A0070AB94 /* Default@2x.png in Resources */,
-				5D2042911729420A0070AB94 /* Default-568h@2x.png in Resources */,
 				5D2042B7172968270070AB94 /* MainWindow.xib in Resources */,
 				5D2042C2172969410070AB94 /* JDPMainViewController.xib in Resources */,
 				5D2042C7172969CB0070AB94 /* JDPMenuViewController.xib in Resources */,
