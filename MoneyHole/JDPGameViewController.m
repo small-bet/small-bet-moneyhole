@@ -82,7 +82,7 @@
     self.scoreLabel.alpha = 0.0;
     
     self.endGameProgressView.alpha = 0.0;
-    self.endGameProgressView.layer.speed = 0.4;
+    self.endGameProgressView.layer.speed = 0.1;
 }
 
 -(void)viewWillAppear:(BOOL)animated{

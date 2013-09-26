@@ -14,8 +14,6 @@
 
 #import "JDPGame.h"
 
-#import "UIButton+theme.h"
-
 @interface JDPGameEndViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *aimLabel;
 @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
@@ -47,8 +45,6 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    
-    [self.doneButton jdpThemeButtonWithMoneyholeTheme];
     
     if (self.challenge == nil) {
         [self.activityIndicator stopAnimating];

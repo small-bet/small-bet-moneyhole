@@ -26,8 +26,7 @@
 - (void)setEmitting:(BOOL)emitting
 {
     _emitting = emitting;
-    [self.emitterLayer setValue:[NSNumber numberWithInt:emitting ? 30.0 : 0] forKeyPath:@"emitterCells.money.birthRate"];
-
+    self.emitterLayer.lifetime = emitting ? 1.0 : 0.0;
 }
 
 #pragma mark - lifecycle
@@ -54,11 +53,13 @@
 -(void)setupEmitterLayer{
     // create emitter layer
     self.emitterLayer = (CAEmitterLayer*)self.layer;
+    self.emitterLayer.seed = [[NSDate date] timeIntervalSince1970];
     self.emitterLayer.emitterPosition = CGPointMake(-15.0, 50.0);
     self.emitterLayer.emitterSize = CGSizeMake(26.0, 100.0);
     self.emitterLayer.emitterShape = kCAEmitterLayerLine;
     self.emitterLayer.emitterMode = kCAEmitterLayerPoints;
     self.emitterLayer.renderMode = kCAEmitterLayerUnordered;
+    self.emitterLayer.lifetime = 0.0;
 
     CAEmitterCell *money = [CAEmitterCell emitterCell];
     NSString * imagePath = [[NSBundle mainBundle] pathForResource:@"dollar" ofType:@"png"];
@@ -66,7 +67,7 @@
     money.contents = (id)image.CGImage;
     money.color = [UIColor colorWithWhite:1.0 alpha:1.0].CGColor;
     //general
-    money.birthRate = 0.0;
+    money.birthRate = 30.0;
     money.lifetime = 1.70;
     money.scale = 0.15;
     money.scaleRange = 0.1;

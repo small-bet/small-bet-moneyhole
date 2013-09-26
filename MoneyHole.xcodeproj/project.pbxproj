@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D1C439217F4624000B94C52 /* ACKNOWLEDGEMENTS in Resources */ = {isa = PBXBuildFile; fileRef = 5D1C438B17F4624000B94C52 /* ACKNOWLEDGEMENTS */; };
+		5D1C439317F4624000B94C52 /* CHANGES in Resources */ = {isa = PBXBuildFile; fileRef = 5D1C438C17F4624000B94C52 /* CHANGES */; };
+		5D1C439417F4624000B94C52 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 5D1C438D17F4624000B94C52 /* README */; };
+		5D1C439517F4624000B94C52 /* SmallBet.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5D1C438E17F4624000B94C52 /* SmallBet.bundle */; };
+		5D1C439617F4624000B94C52 /* SmallBet.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 5D1C438F17F4624000B94C52 /* SmallBet.xcconfig */; };
+		5D1C439717F4624000B94C52 /* VERSION in Resources */ = {isa = PBXBuildFile; fileRef = 5D1C439017F4624000B94C52 /* VERSION */; };
+		5D1C439817F4624000B94C52 /* SmallBet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D1C439117F4624000B94C52 /* SmallBet.framework */; };
 		5D20427B172942090070AB94 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D20427A172942090070AB94 /* UIKit.framework */; };
 		5D20427D172942090070AB94 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D20427C172942090070AB94 /* Foundation.framework */; };
 		5D20427F172942090070AB94 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D20427E172942090070AB94 /* CoreGraphics.framework */; };
@@ -23,82 +30,26 @@
 		5D2042C2172969410070AB94 /* JDPMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D2042C0172969410070AB94 /* JDPMainViewController.xib */; };
 		5D2042C6172969CB0070AB94 /* JDPMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D2042C4172969CB0070AB94 /* JDPMenuViewController.m */; };
 		5D2042C7172969CB0070AB94 /* JDPMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D2042C5172969CB0070AB94 /* JDPMenuViewController.xib */; };
-		5D2042E017296DCE0070AB94 /* JDPChallengeListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D2042DE17296DCE0070AB94 /* JDPChallengeListViewController.m */; };
-		5D2042E117296DCE0070AB94 /* JDPChallengeListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D2042DF17296DCE0070AB94 /* JDPChallengeListViewController.xib */; };
-		5D2042E417296DEA0070AB94 /* JDPChallengeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D2042E317296DEA0070AB94 /* JDPChallengeCell.m */; };
-		5D2042E617296DF60070AB94 /* JDPChallengeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D2042E517296DF60070AB94 /* JDPChallengeCell.xib */; };
-		5D2042EA17296E2C0070AB94 /* JDPChallengeStatusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D2042E817296E2C0070AB94 /* JDPChallengeStatusViewController.m */; };
-		5D2042EB17296E2C0070AB94 /* JDPChallengeStatusViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D2042E917296E2C0070AB94 /* JDPChallengeStatusViewController.xib */; };
 		5D2042F117296E650070AB94 /* JDPGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D2042EF17296E650070AB94 /* JDPGameViewController.m */; };
 		5D2042F217296E650070AB94 /* JDPGameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D2042F017296E650070AB94 /* JDPGameViewController.xib */; };
-		5D2042F7172974700070AB94 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5D2042F3172974700070AB94 /* background.jpg */; };
-		5D2042F8172974700070AB94 /* background@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5D2042F4172974700070AB94 /* background@2x.jpg */; };
 		5D2042F9172974700070AB94 /* money.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5D2042F5172974700070AB94 /* money.jpg */; };
 		5D2042FA172974700070AB94 /* money@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5D2042F6172974700070AB94 /* money@2x.jpg */; };
 		5D2042FE172978CE0070AB94 /* JDPGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D2042FD172978CE0070AB94 /* JDPGame.m */; };
 		5D204304172981BB0070AB94 /* JDPCreateChallengeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D204302172981BB0070AB94 /* JDPCreateChallengeViewController.m */; };
 		5D204305172981BB0070AB94 /* JDPCreateChallengeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D204303172981BB0070AB94 /* JDPCreateChallengeViewController.xib */; };
 		5D20432B172991B30070AB94 /* JDPFingerGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D20432A172991B30070AB94 /* JDPFingerGestureRecognizer.m */; };
-		5D20432F1729F6720070AB94 /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D20432D1729F6720070AB94 /* button.png */; };
-		5D2043301729F6720070AB94 /* button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D20432E1729F6720070AB94 /* button@2x.png */; };
-		5D2043351729FBB40070AB94 /* buttonDisabled.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D2043311729FBB40070AB94 /* buttonDisabled.png */; };
-		5D2043361729FBB40070AB94 /* buttonDisabled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D2043321729FBB40070AB94 /* buttonDisabled@2x.png */; };
-		5D2043371729FBB40070AB94 /* buttonHighlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D2043331729FBB40070AB94 /* buttonHighlighted.png */; };
-		5D2043381729FBB40070AB94 /* buttonHighlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D2043341729FBB40070AB94 /* buttonHighlighted@2x.png */; };
-		5D20433B172A02640070AB94 /* JDPLoadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D20433A172A02640070AB94 /* JDPLoadingCell.xib */; };
 		5D21904A172FCB7400A208CA /* JDPGameEndViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D219048172FCB7400A208CA /* JDPGameEndViewController.m */; };
 		5D21904B172FCB7400A208CA /* JDPGameEndViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D219049172FCB7400A208CA /* JDPGameEndViewController.xib */; };
-		5D21904E172FD3D300A208CA /* victoryPanel.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D21904C172FD3D300A208CA /* victoryPanel.png */; };
-		5D21904F172FD3D300A208CA /* victoryPanel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D21904D172FD3D300A208CA /* victoryPanel@2x.png */; };
-		5D21905E17300A1C00A208CA /* radialGradient.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D21905C17300A1C00A208CA /* radialGradient.png */; };
-		5D21905F17300A1C00A208CA /* radialGradient@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D21905D17300A1C00A208CA /* radialGradient@2x.png */; };
 		5D2BDBAC172E7FC90020C761 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D2BDBAB172E7FC80020C761 /* SystemConfiguration.framework */; };
 		5D2BDBAE172E7FCE0020C761 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D2BDBAD172E7FCE0020C761 /* MobileCoreServices.framework */; };
-		5D2BDBB0172E82D20020C761 /* JDPNoChallengesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D2BDBAF172E82D20020C761 /* JDPNoChallengesCell.xib */; };
 		5D2BDBB2172E853E0020C761 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D2BDBB1172E853E0020C761 /* QuartzCore.framework */; };
-		5D2BDBB5172E94D90020C761 /* UIButton+theme.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D2BDBB4172E94D90020C761 /* UIButton+theme.m */; };
-		5D9683F61757B0BF008BEAB9 /* background_dark@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5D9683F51757B0BF008BEAB9 /* background_dark@2x.jpg */; };
-		5D9683F71757B0BF008BEAB9 /* background_dark@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5D9683F51757B0BF008BEAB9 /* background_dark@2x.jpg */; };
-		5D9683FA1757B102008BEAB9 /* background_dark.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5D9683F91757B102008BEAB9 /* background_dark.jpg */; };
-		5D9683FB1757B102008BEAB9 /* background_dark.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5D9683F91757B102008BEAB9 /* background_dark.jpg */; };
-		5D9683FC1757B632008BEAB9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D20432317298B390070AB94 /* Default-568h@2x.png */; };
-		5D9683FD1757B63D008BEAB9 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D20432517298B3F0070AB94 /* Default@2x.png */; };
-		5D9683FE1757B643008BEAB9 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D20432717298B410070AB94 /* Default.png */; };
-		5D9684001757BCE9008BEAB9 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D9683FF1757BCE9008BEAB9 /* icon@2x.png */; };
-		5D9684021757BD1B008BEAB9 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D9684011757BD1B008BEAB9 /* icon.png */; };
-		5D96840D1758DC9D008BEAB9 /* JDPLoadingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D96840C1758DC9D008BEAB9 /* JDPLoadingCell.m */; };
-		5D96840E1758DC9D008BEAB9 /* JDPLoadingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D96840C1758DC9D008BEAB9 /* JDPLoadingCell.m */; };
-		5DA27AD517D0F1F90072C500 /* ACKNOWLEDGEMENTS in Resources */ = {isa = PBXBuildFile; fileRef = 5DA27ACE17D0F1F90072C500 /* ACKNOWLEDGEMENTS */; };
-		5DA27AD617D0F1F90072C500 /* CHANGES in Resources */ = {isa = PBXBuildFile; fileRef = 5DA27ACF17D0F1F90072C500 /* CHANGES */; };
-		5DA27AD717D0F1F90072C500 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 5DA27AD017D0F1F90072C500 /* README */; };
-		5DA27AD817D0F1F90072C500 /* SmallBet.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5DA27AD117D0F1F90072C500 /* SmallBet.bundle */; };
-		5DA27AD917D0F1F90072C500 /* SmallBet.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 5DA27AD217D0F1F90072C500 /* SmallBet.xcconfig */; };
-		5DA27ADA17D0F1F90072C500 /* VERSION in Resources */ = {isa = PBXBuildFile; fileRef = 5DA27AD317D0F1F90072C500 /* VERSION */; };
-		5DA27ADB17D0F1F90072C500 /* SmallBet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DA27AD417D0F1F90072C500 /* SmallBet.framework */; };
+		5D6B1D8C17EDAF9500E99BD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D6B1D8B17EDAF9500E99BD1 /* Assets.xcassets */; };
+		5DB7B20C17EDF71A000FD6EF /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5DB7B20A17EDF71A000FD6EF /* background.jpg */; };
+		5DB7B20D17EDF71A000FD6EF /* background@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5DB7B20B17EDF71A000FD6EF /* background@2x.jpg */; };
 		5DBA8BB11757711E0064CD95 /* JDPCreditsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DBA8BAF1757711E0064CD95 /* JDPCreditsViewController.m */; };
 		5DBA8BB21757711E0064CD95 /* JDPCreditsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DBA8BAF1757711E0064CD95 /* JDPCreditsViewController.m */; };
 		5DBA8BB31757711E0064CD95 /* JDPCreditsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DBA8BB01757711E0064CD95 /* JDPCreditsViewController.xib */; };
 		5DBA8BB41757711E0064CD95 /* JDPCreditsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DBA8BB01757711E0064CD95 /* JDPCreditsViewController.xib */; };
-		5DBA8BC0175772230064CD95 /* cloud1.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DBA8BB6175772230064CD95 /* cloud1.png */; };
-		5DBA8BC1175772230064CD95 /* cloud1.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DBA8BB6175772230064CD95 /* cloud1.png */; };
-		5DBA8BC2175772230064CD95 /* cloud1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DBA8BB7175772230064CD95 /* cloud1@2x.png */; };
-		5DBA8BC3175772230064CD95 /* cloud1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DBA8BB7175772230064CD95 /* cloud1@2x.png */; };
-		5DBA8BC4175772230064CD95 /* cloud2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DBA8BB8175772230064CD95 /* cloud2.png */; };
-		5DBA8BC5175772230064CD95 /* cloud2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DBA8BB8175772230064CD95 /* cloud2.png */; };
-		5DBA8BC6175772230064CD95 /* cloud2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DBA8BB9175772230064CD95 /* cloud2@2x.png */; };
-		5DBA8BC7175772230064CD95 /* cloud2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DBA8BB9175772230064CD95 /* cloud2@2x.png */; };
-		5DBA8BC8175772230064CD95 /* cloud3.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DBA8BBA175772230064CD95 /* cloud3.png */; };
-		5DBA8BC9175772230064CD95 /* cloud3.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DBA8BBA175772230064CD95 /* cloud3.png */; };
-		5DBA8BCA175772230064CD95 /* cloud3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DBA8BBB175772230064CD95 /* cloud3@2x.png */; };
-		5DBA8BCB175772230064CD95 /* cloud3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DBA8BBB175772230064CD95 /* cloud3@2x.png */; };
-		5DBA8BCC175772230064CD95 /* cloud4.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DBA8BBC175772230064CD95 /* cloud4.png */; };
-		5DBA8BCD175772230064CD95 /* cloud4.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DBA8BBC175772230064CD95 /* cloud4.png */; };
-		5DBA8BCE175772230064CD95 /* cloud4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DBA8BBD175772230064CD95 /* cloud4@2x.png */; };
-		5DBA8BCF175772230064CD95 /* cloud4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DBA8BBD175772230064CD95 /* cloud4@2x.png */; };
-		5DBA8BD0175772230064CD95 /* cloud5.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DBA8BBE175772230064CD95 /* cloud5.png */; };
-		5DBA8BD1175772230064CD95 /* cloud5.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DBA8BBE175772230064CD95 /* cloud5.png */; };
-		5DBA8BD2175772230064CD95 /* cloud5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DBA8BBF175772230064CD95 /* cloud5@2x.png */; };
-		5DBA8BD3175772230064CD95 /* cloud5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DBA8BBF175772230064CD95 /* cloud5@2x.png */; };
 		5DBA8BD6175788920064CD95 /* JDPMoneyEmitterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DBA8BD5175788920064CD95 /* JDPMoneyEmitterView.m */; };
 		5DBA8BD7175788920064CD95 /* JDPMoneyEmitterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DBA8BD5175788920064CD95 /* JDPMoneyEmitterView.m */; };
 		5DBA8BDC17578EF30064CD95 /* dollar.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DBA8BDB17578EF30064CD95 /* dollar.png */; };
@@ -125,6 +76,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5D1C438B17F4624000B94C52 /* ACKNOWLEDGEMENTS */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ACKNOWLEDGEMENTS; sourceTree = "<group>"; };
+		5D1C438C17F4624000B94C52 /* CHANGES */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CHANGES; sourceTree = "<group>"; };
+		5D1C438D17F4624000B94C52 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		5D1C438E17F4624000B94C52 /* SmallBet.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SmallBet.bundle; sourceTree = "<group>"; };
+		5D1C438F17F4624000B94C52 /* SmallBet.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = SmallBet.xcconfig; sourceTree = "<group>"; };
+		5D1C439017F4624000B94C52 /* VERSION */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = VERSION; sourceTree = "<group>"; };
+		5D1C439117F4624000B94C52 /* SmallBet.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SmallBet.framework; sourceTree = "<group>"; };
 		5D204277172942090070AB94 /* MoneyHole.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoneyHole.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D20427A172942090070AB94 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		5D20427C172942090070AB94 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -135,9 +93,6 @@
 		5D204288172942090070AB94 /* MoneyHole-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MoneyHole-Prefix.pch"; sourceTree = "<group>"; };
 		5D204289172942090070AB94 /* JDPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDPAppDelegate.h; sourceTree = "<group>"; };
 		5D20428A172942090070AB94 /* JDPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDPAppDelegate.m; sourceTree = "<group>"; };
-		5D20428C172942090070AB94 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		5D20428E172942090070AB94 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		5D2042901729420A0070AB94 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		5D20429D1729420A0070AB94 /* MoneyHoleTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoneyHoleTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D20429E1729420A0070AB94 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		5D2042A61729420A0070AB94 /* MoneyHoleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MoneyHoleTests-Info.plist"; sourceTree = "<group>"; };
@@ -151,20 +106,9 @@
 		5D2042C3172969CB0070AB94 /* JDPMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDPMenuViewController.h; sourceTree = "<group>"; };
 		5D2042C4172969CB0070AB94 /* JDPMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDPMenuViewController.m; sourceTree = "<group>"; };
 		5D2042C5172969CB0070AB94 /* JDPMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JDPMenuViewController.xib; sourceTree = "<group>"; };
-		5D2042DD17296DCE0070AB94 /* JDPChallengeListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDPChallengeListViewController.h; sourceTree = "<group>"; };
-		5D2042DE17296DCE0070AB94 /* JDPChallengeListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDPChallengeListViewController.m; sourceTree = "<group>"; };
-		5D2042DF17296DCE0070AB94 /* JDPChallengeListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JDPChallengeListViewController.xib; sourceTree = "<group>"; };
-		5D2042E217296DEA0070AB94 /* JDPChallengeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDPChallengeCell.h; sourceTree = "<group>"; };
-		5D2042E317296DEA0070AB94 /* JDPChallengeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDPChallengeCell.m; sourceTree = "<group>"; };
-		5D2042E517296DF60070AB94 /* JDPChallengeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JDPChallengeCell.xib; sourceTree = "<group>"; };
-		5D2042E717296E2C0070AB94 /* JDPChallengeStatusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDPChallengeStatusViewController.h; sourceTree = "<group>"; };
-		5D2042E817296E2C0070AB94 /* JDPChallengeStatusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDPChallengeStatusViewController.m; sourceTree = "<group>"; };
-		5D2042E917296E2C0070AB94 /* JDPChallengeStatusViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JDPChallengeStatusViewController.xib; sourceTree = "<group>"; };
 		5D2042EE17296E650070AB94 /* JDPGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDPGameViewController.h; sourceTree = "<group>"; };
 		5D2042EF17296E650070AB94 /* JDPGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDPGameViewController.m; sourceTree = "<group>"; };
 		5D2042F017296E650070AB94 /* JDPGameViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JDPGameViewController.xib; sourceTree = "<group>"; };
-		5D2042F3172974700070AB94 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
-		5D2042F4172974700070AB94 /* background@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "background@2x.jpg"; sourceTree = "<group>"; };
 		5D2042F5172974700070AB94 /* money.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = money.jpg; sourceTree = "<group>"; };
 		5D2042F6172974700070AB94 /* money@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "money@2x.jpg"; sourceTree = "<group>"; };
 		5D2042FC172978CE0070AB94 /* JDPGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDPGame.h; sourceTree = "<group>"; };
@@ -172,59 +116,21 @@
 		5D204301172981BB0070AB94 /* JDPCreateChallengeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDPCreateChallengeViewController.h; sourceTree = "<group>"; };
 		5D204302172981BB0070AB94 /* JDPCreateChallengeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDPCreateChallengeViewController.m; sourceTree = "<group>"; };
 		5D204303172981BB0070AB94 /* JDPCreateChallengeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JDPCreateChallengeViewController.xib; sourceTree = "<group>"; };
-		5D20432317298B390070AB94 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		5D20432517298B3F0070AB94 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		5D20432717298B410070AB94 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		5D204329172991B30070AB94 /* JDPFingerGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDPFingerGestureRecognizer.h; sourceTree = "<group>"; };
 		5D20432A172991B30070AB94 /* JDPFingerGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDPFingerGestureRecognizer.m; sourceTree = "<group>"; };
-		5D20432C172995D90070AB94 /* JDPChallengeSelectionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDPChallengeSelectionDelegate.h; sourceTree = "<group>"; };
-		5D20432D1729F6720070AB94 /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.png; sourceTree = "<group>"; };
-		5D20432E1729F6720070AB94 /* button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button@2x.png"; sourceTree = "<group>"; };
-		5D2043311729FBB40070AB94 /* buttonDisabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonDisabled.png; sourceTree = "<group>"; };
-		5D2043321729FBB40070AB94 /* buttonDisabled@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "buttonDisabled@2x.png"; sourceTree = "<group>"; };
-		5D2043331729FBB40070AB94 /* buttonHighlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonHighlighted.png; sourceTree = "<group>"; };
-		5D2043341729FBB40070AB94 /* buttonHighlighted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "buttonHighlighted@2x.png"; sourceTree = "<group>"; };
-		5D20433A172A02640070AB94 /* JDPLoadingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JDPLoadingCell.xib; sourceTree = "<group>"; };
 		5D219047172FCB7400A208CA /* JDPGameEndViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDPGameEndViewController.h; sourceTree = "<group>"; };
 		5D219048172FCB7400A208CA /* JDPGameEndViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDPGameEndViewController.m; sourceTree = "<group>"; };
 		5D219049172FCB7400A208CA /* JDPGameEndViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JDPGameEndViewController.xib; sourceTree = "<group>"; };
-		5D21904C172FD3D300A208CA /* victoryPanel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = victoryPanel.png; sourceTree = "<group>"; };
-		5D21904D172FD3D300A208CA /* victoryPanel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "victoryPanel@2x.png"; sourceTree = "<group>"; };
-		5D21905C17300A1C00A208CA /* radialGradient.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = radialGradient.png; sourceTree = "<group>"; };
-		5D21905D17300A1C00A208CA /* radialGradient@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radialGradient@2x.png"; sourceTree = "<group>"; };
 		5D2BDBAB172E7FC80020C761 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		5D2BDBAD172E7FCE0020C761 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
-		5D2BDBAF172E82D20020C761 /* JDPNoChallengesCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JDPNoChallengesCell.xib; sourceTree = "<group>"; };
 		5D2BDBB1172E853E0020C761 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		5D2BDBB3172E94D90020C761 /* UIButton+theme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+theme.h"; sourceTree = "<group>"; };
-		5D2BDBB4172E94D90020C761 /* UIButton+theme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+theme.m"; sourceTree = "<group>"; };
-		5D9683F51757B0BF008BEAB9 /* background_dark@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "background_dark@2x.jpg"; sourceTree = "<group>"; };
-		5D9683F91757B102008BEAB9 /* background_dark.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background_dark.jpg; sourceTree = "<group>"; };
-		5D9683FF1757BCE9008BEAB9 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
-		5D9684011757BD1B008BEAB9 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		5D6B1D8B17EDAF9500E99BD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
 		5D9684031757BEA3008BEAB9 /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
-		5D96840B1758DC9D008BEAB9 /* JDPLoadingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDPLoadingCell.h; sourceTree = "<group>"; };
-		5D96840C1758DC9D008BEAB9 /* JDPLoadingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDPLoadingCell.m; sourceTree = "<group>"; };
-		5DA27ACE17D0F1F90072C500 /* ACKNOWLEDGEMENTS */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ACKNOWLEDGEMENTS; sourceTree = "<group>"; };
-		5DA27ACF17D0F1F90072C500 /* CHANGES */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CHANGES; sourceTree = "<group>"; };
-		5DA27AD017D0F1F90072C500 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
-		5DA27AD117D0F1F90072C500 /* SmallBet.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SmallBet.bundle; sourceTree = "<group>"; };
-		5DA27AD217D0F1F90072C500 /* SmallBet.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = SmallBet.xcconfig; sourceTree = "<group>"; };
-		5DA27AD317D0F1F90072C500 /* VERSION */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = VERSION; sourceTree = "<group>"; };
-		5DA27AD417D0F1F90072C500 /* SmallBet.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SmallBet.framework; sourceTree = "<group>"; };
+		5DB7B20A17EDF71A000FD6EF /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
+		5DB7B20B17EDF71A000FD6EF /* background@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "background@2x.jpg"; sourceTree = "<group>"; };
 		5DBA8BAE1757711E0064CD95 /* JDPCreditsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDPCreditsViewController.h; sourceTree = "<group>"; };
 		5DBA8BAF1757711E0064CD95 /* JDPCreditsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDPCreditsViewController.m; sourceTree = "<group>"; };
 		5DBA8BB01757711E0064CD95 /* JDPCreditsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JDPCreditsViewController.xib; sourceTree = "<group>"; };
-		5DBA8BB6175772230064CD95 /* cloud1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloud1.png; sourceTree = "<group>"; };
-		5DBA8BB7175772230064CD95 /* cloud1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cloud1@2x.png"; sourceTree = "<group>"; };
-		5DBA8BB8175772230064CD95 /* cloud2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloud2.png; sourceTree = "<group>"; };
-		5DBA8BB9175772230064CD95 /* cloud2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cloud2@2x.png"; sourceTree = "<group>"; };
-		5DBA8BBA175772230064CD95 /* cloud3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloud3.png; sourceTree = "<group>"; };
-		5DBA8BBB175772230064CD95 /* cloud3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cloud3@2x.png"; sourceTree = "<group>"; };
-		5DBA8BBC175772230064CD95 /* cloud4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloud4.png; sourceTree = "<group>"; };
-		5DBA8BBD175772230064CD95 /* cloud4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cloud4@2x.png"; sourceTree = "<group>"; };
-		5DBA8BBE175772230064CD95 /* cloud5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloud5.png; sourceTree = "<group>"; };
-		5DBA8BBF175772230064CD95 /* cloud5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cloud5@2x.png"; sourceTree = "<group>"; };
 		5DBA8BD4175788920064CD95 /* JDPMoneyEmitterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDPMoneyEmitterView.h; sourceTree = "<group>"; };
 		5DBA8BD5175788920064CD95 /* JDPMoneyEmitterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDPMoneyEmitterView.m; sourceTree = "<group>"; };
 		5DBA8BDB17578EF30064CD95 /* dollar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dollar.png; sourceTree = "<group>"; };
@@ -258,9 +164,9 @@
 				5D2BDBB2172E853E0020C761 /* QuartzCore.framework in Frameworks */,
 				5D2BDBAE172E7FCE0020C761 /* MobileCoreServices.framework in Frameworks */,
 				5D20427B172942090070AB94 /* UIKit.framework in Frameworks */,
+				5D1C439817F4624000B94C52 /* SmallBet.framework in Frameworks */,
 				5D20427D172942090070AB94 /* Foundation.framework in Frameworks */,
 				5D20427F172942090070AB94 /* CoreGraphics.framework in Frameworks */,
-				5DA27ADB17D0F1F90072C500 /* SmallBet.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,15 +183,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5D1C438917F4624000B94C52 /* SmallBet.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				5D1C438A17F4624000B94C52 /* Resources */,
+				5D1C439117F4624000B94C52 /* SmallBet.framework */,
+			);
+			path = SmallBet.embeddedframework;
+			sourceTree = "<group>";
+		};
+		5D1C438A17F4624000B94C52 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5D1C438B17F4624000B94C52 /* ACKNOWLEDGEMENTS */,
+				5D1C438C17F4624000B94C52 /* CHANGES */,
+				5D1C438D17F4624000B94C52 /* README */,
+				5D1C438E17F4624000B94C52 /* SmallBet.bundle */,
+				5D1C438F17F4624000B94C52 /* SmallBet.xcconfig */,
+				5D1C439017F4624000B94C52 /* VERSION */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		5D20426E172942090070AB94 = {
 			isa = PBXGroup;
 			children = (
 				5D9684031757BEA3008BEAB9 /* iTunesArtwork */,
-				5D9684011757BD1B008BEAB9 /* icon.png */,
-				5D9683FF1757BCE9008BEAB9 /* icon@2x.png */,
-				5D20432717298B410070AB94 /* Default.png */,
-				5D20432517298B3F0070AB94 /* Default@2x.png */,
-				5D20432317298B390070AB94 /* Default-568h@2x.png */,
 				5D204280172942090070AB94 /* MoneyHole */,
 				5D2042C917296CE20070AB94 /* Vendor */,
 				5D2042A41729420A0070AB94 /* MoneyHoleTests */,
@@ -323,8 +246,8 @@
 				5D2042B6172968270070AB94 /* MainWindow.xib */,
 				5D204289172942090070AB94 /* JDPAppDelegate.h */,
 				5D20428A172942090070AB94 /* JDPAppDelegate.m */,
-				5D2042B9172968360070AB94 /* Model (No small-bet related code needed here) */,
-				5D2042B81729682E0070AB94 /* View (also nothing small-bet specific) */,
+				5D2042B9172968360070AB94 /* Model */,
+				5D2042B81729682E0070AB94 /* View */,
 				5D2042BA1729683B0070AB94 /* Controller */,
 				5D204281172942090070AB94 /* Supporting Files */,
 			);
@@ -334,14 +257,12 @@
 		5D204281172942090070AB94 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5D6B1D8B17EDAF9500E99BD1 /* Assets.xcassets */,
 				5D2042FB172974750070AB94 /* Images */,
 				5D204282172942090070AB94 /* MoneyHole-Info.plist */,
 				5D204283172942090070AB94 /* InfoPlist.strings */,
 				5D204286172942090070AB94 /* main.m */,
 				5D204288172942090070AB94 /* MoneyHole-Prefix.pch */,
-				5D20428C172942090070AB94 /* Default.png */,
-				5D20428E172942090070AB94 /* Default@2x.png */,
-				5D2042901729420A0070AB94 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -365,25 +286,16 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		5D2042B81729682E0070AB94 /* View (also nothing small-bet specific) */ = {
+		5D2042B81729682E0070AB94 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				5D2BDBB3172E94D90020C761 /* UIButton+theme.h */,
-				5D2BDBB4172E94D90020C761 /* UIButton+theme.m */,
-				5D2042E217296DEA0070AB94 /* JDPChallengeCell.h */,
-				5D2042E317296DEA0070AB94 /* JDPChallengeCell.m */,
-				5D2042E517296DF60070AB94 /* JDPChallengeCell.xib */,
-				5D96840B1758DC9D008BEAB9 /* JDPLoadingCell.h */,
-				5D96840C1758DC9D008BEAB9 /* JDPLoadingCell.m */,
-				5D20433A172A02640070AB94 /* JDPLoadingCell.xib */,
-				5D2BDBAF172E82D20020C761 /* JDPNoChallengesCell.xib */,
 				5DBA8BD4175788920064CD95 /* JDPMoneyEmitterView.h */,
 				5DBA8BD5175788920064CD95 /* JDPMoneyEmitterView.m */,
 			);
-			name = "View (also nothing small-bet specific)";
+			name = View;
 			sourceTree = "<group>";
 		};
-		5D2042B9172968360070AB94 /* Model (No small-bet related code needed here) */ = {
+		5D2042B9172968360070AB94 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				5D2042FC172978CE0070AB94 /* JDPGame.h */,
@@ -391,7 +303,7 @@
 				5D204329172991B30070AB94 /* JDPFingerGestureRecognizer.h */,
 				5D20432A172991B30070AB94 /* JDPFingerGestureRecognizer.m */,
 			);
-			name = "Model (No small-bet related code needed here)";
+			name = Model;
 			sourceTree = "<group>";
 		};
 		5D2042BA1729683B0070AB94 /* Controller */ = {
@@ -400,44 +312,43 @@
 				5D2042BE172969410070AB94 /* JDPMainViewController.h */,
 				5D2042BF172969410070AB94 /* JDPMainViewController.m */,
 				5D2042C0172969410070AB94 /* JDPMainViewController.xib */,
-				5D2042C8172969D30070AB94 /* Main Menu (small-bet login and game loading) */,
-				5D2042DB17296DA60070AB94 /* Challenge View Controllers (all small-bet related) */,
-				5D2042EC17296E3A0070AB94 /* Game View Controller (Submitting Scores) */,
-				5DBA8BAD175771000064CD95 /* Credits View Controller (nothing small-bet specific) */,
+				5D2042C8172969D30070AB94 /* Main Menu */,
+				5D2042DB17296DA60070AB94 /* Challenge View Controllers */,
+				5D2042EC17296E3A0070AB94 /* Game View Controller */,
+				5DBA8BAD175771000064CD95 /* Credits View Controller */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
 		};
-		5D2042C8172969D30070AB94 /* Main Menu (small-bet login and game loading) */ = {
+		5D2042C8172969D30070AB94 /* Main Menu */ = {
 			isa = PBXGroup;
 			children = (
 				5D2042C3172969CB0070AB94 /* JDPMenuViewController.h */,
 				5D2042C4172969CB0070AB94 /* JDPMenuViewController.m */,
 				5D2042C5172969CB0070AB94 /* JDPMenuViewController.xib */,
 			);
-			name = "Main Menu (small-bet login and game loading)";
+			name = "Main Menu";
 			sourceTree = "<group>";
 		};
 		5D2042C917296CE20070AB94 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
-				5DA27ACC17D0F1F90072C500 /* SmallBet.embeddedframework */,
+				5D1C438917F4624000B94C52 /* SmallBet.embeddedframework */,
 				5DC750C9174559E8003BA8E2 /* AFNetworking */,
 			);
 			name = Vendor;
 			path = MoneyHole;
 			sourceTree = "<group>";
 		};
-		5D2042DB17296DA60070AB94 /* Challenge View Controllers (all small-bet related) */ = {
+		5D2042DB17296DA60070AB94 /* Challenge View Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				5D2043001729819F0070AB94 /* Creating Challenges */,
-				5D2042FF172981950070AB94 /* Viewing Challenges (Just an example. You can use SBChallengesViewController) */,
 			);
-			name = "Challenge View Controllers (all small-bet related)";
+			name = "Challenge View Controllers";
 			sourceTree = "<group>";
 		};
-		5D2042EC17296E3A0070AB94 /* Game View Controller (Submitting Scores) */ = {
+		5D2042EC17296E3A0070AB94 /* Game View Controller */ = {
 			isa = PBXGroup;
 			children = (
 				5D2042EE17296E650070AB94 /* JDPGameViewController.h */,
@@ -447,38 +358,18 @@
 				5D219048172FCB7400A208CA /* JDPGameEndViewController.m */,
 				5D219049172FCB7400A208CA /* JDPGameEndViewController.xib */,
 			);
-			name = "Game View Controller (Submitting Scores)";
+			name = "Game View Controller";
 			sourceTree = "<group>";
 		};
 		5D2042FB172974750070AB94 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				5DBA8BB51757721C0064CD95 /* Clouds by @scottdejonge */,
-				5DEB9ED817842A2D00FAFD0F /* dollar by @pixelblock */,
-				5D2043391729FBB90070AB94 /* Buttons */,
+				5DBA8BDB17578EF30064CD95 /* dollar.png */,
 				5D9683F81757B0C6008BEAB9 /* Backgrounds */,
-				5D21905C17300A1C00A208CA /* radialGradient.png */,
-				5D21905D17300A1C00A208CA /* radialGradient@2x.png */,
-				5D21904C172FD3D300A208CA /* victoryPanel.png */,
-				5D21904D172FD3D300A208CA /* victoryPanel@2x.png */,
 				5D2042F5172974700070AB94 /* money.jpg */,
 				5D2042F6172974700070AB94 /* money@2x.jpg */,
 			);
 			name = Images;
-			sourceTree = "<group>";
-		};
-		5D2042FF172981950070AB94 /* Viewing Challenges (Just an example. You can use SBChallengesViewController) */ = {
-			isa = PBXGroup;
-			children = (
-				5D20432C172995D90070AB94 /* JDPChallengeSelectionDelegate.h */,
-				5D2042DD17296DCE0070AB94 /* JDPChallengeListViewController.h */,
-				5D2042DE17296DCE0070AB94 /* JDPChallengeListViewController.m */,
-				5D2042DF17296DCE0070AB94 /* JDPChallengeListViewController.xib */,
-				5D2042E717296E2C0070AB94 /* JDPChallengeStatusViewController.h */,
-				5D2042E817296E2C0070AB94 /* JDPChallengeStatusViewController.m */,
-				5D2042E917296E2C0070AB94 /* JDPChallengeStatusViewController.xib */,
-			);
-			name = "Viewing Challenges (Just an example. You can use SBChallengesViewController)";
 			sourceTree = "<group>";
 		};
 		5D2043001729819F0070AB94 /* Creating Challenges */ = {
@@ -491,77 +382,23 @@
 			name = "Creating Challenges";
 			sourceTree = "<group>";
 		};
-		5D2043391729FBB90070AB94 /* Buttons */ = {
-			isa = PBXGroup;
-			children = (
-				5D20432D1729F6720070AB94 /* button.png */,
-				5D20432E1729F6720070AB94 /* button@2x.png */,
-				5D2043311729FBB40070AB94 /* buttonDisabled.png */,
-				5D2043321729FBB40070AB94 /* buttonDisabled@2x.png */,
-				5D2043331729FBB40070AB94 /* buttonHighlighted.png */,
-				5D2043341729FBB40070AB94 /* buttonHighlighted@2x.png */,
-			);
-			name = Buttons;
-			sourceTree = "<group>";
-		};
 		5D9683F81757B0C6008BEAB9 /* Backgrounds */ = {
 			isa = PBXGroup;
 			children = (
-				5D2042F3172974700070AB94 /* background.jpg */,
-				5D2042F4172974700070AB94 /* background@2x.jpg */,
-				5D9683F51757B0BF008BEAB9 /* background_dark@2x.jpg */,
-				5D9683F91757B102008BEAB9 /* background_dark.jpg */,
+				5DB7B20A17EDF71A000FD6EF /* background.jpg */,
+				5DB7B20B17EDF71A000FD6EF /* background@2x.jpg */,
 			);
 			name = Backgrounds;
 			sourceTree = "<group>";
 		};
-		5DA27ACC17D0F1F90072C500 /* SmallBet.embeddedframework */ = {
-			isa = PBXGroup;
-			children = (
-				5DA27ACD17D0F1F90072C500 /* Resources */,
-				5DA27AD417D0F1F90072C500 /* SmallBet.framework */,
-			);
-			path = SmallBet.embeddedframework;
-			sourceTree = "<group>";
-		};
-		5DA27ACD17D0F1F90072C500 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				5DA27ACE17D0F1F90072C500 /* ACKNOWLEDGEMENTS */,
-				5DA27ACF17D0F1F90072C500 /* CHANGES */,
-				5DA27AD017D0F1F90072C500 /* README */,
-				5DA27AD117D0F1F90072C500 /* SmallBet.bundle */,
-				5DA27AD217D0F1F90072C500 /* SmallBet.xcconfig */,
-				5DA27AD317D0F1F90072C500 /* VERSION */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		5DBA8BAD175771000064CD95 /* Credits View Controller (nothing small-bet specific) */ = {
+		5DBA8BAD175771000064CD95 /* Credits View Controller */ = {
 			isa = PBXGroup;
 			children = (
 				5DBA8BAE1757711E0064CD95 /* JDPCreditsViewController.h */,
 				5DBA8BAF1757711E0064CD95 /* JDPCreditsViewController.m */,
 				5DBA8BB01757711E0064CD95 /* JDPCreditsViewController.xib */,
 			);
-			name = "Credits View Controller (nothing small-bet specific)";
-			sourceTree = "<group>";
-		};
-		5DBA8BB51757721C0064CD95 /* Clouds by @scottdejonge */ = {
-			isa = PBXGroup;
-			children = (
-				5DBA8BB6175772230064CD95 /* cloud1.png */,
-				5DBA8BB7175772230064CD95 /* cloud1@2x.png */,
-				5DBA8BB8175772230064CD95 /* cloud2.png */,
-				5DBA8BB9175772230064CD95 /* cloud2@2x.png */,
-				5DBA8BBA175772230064CD95 /* cloud3.png */,
-				5DBA8BBB175772230064CD95 /* cloud3@2x.png */,
-				5DBA8BBC175772230064CD95 /* cloud4.png */,
-				5DBA8BBD175772230064CD95 /* cloud4@2x.png */,
-				5DBA8BBE175772230064CD95 /* cloud5.png */,
-				5DBA8BBF175772230064CD95 /* cloud5@2x.png */,
-			);
-			name = "Clouds by @scottdejonge";
+			name = "Credits View Controller";
 			sourceTree = "<group>";
 		};
 		5DC750C9174559E8003BA8E2 /* AFNetworking */ = {
@@ -590,14 +427,6 @@
 			name = AFNetworking;
 			path = AFNetworking/AFNetworking;
 			sourceTree = SOURCE_ROOT;
-		};
-		5DEB9ED817842A2D00FAFD0F /* dollar by @pixelblock */ = {
-			isa = PBXGroup;
-			children = (
-				5DBA8BDB17578EF30064CD95 /* dollar.png */,
-			);
-			name = "dollar by @pixelblock";
-			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -645,8 +474,13 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = JDP;
-				LastUpgradeCheck = 0460;
+				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Small Bet";
+				TargetAttributes = {
+					5D204276172942090070AB94 = {
+						DevelopmentTeam = ALU6Y3BNWP;
+					};
+				};
 			};
 			buildConfigurationList = 5D204272172942090070AB94 /* Build configuration list for PBXProject "MoneyHole" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -671,57 +505,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D1C439617F4624000B94C52 /* SmallBet.xcconfig in Resources */,
+				5D1C439317F4624000B94C52 /* CHANGES in Resources */,
 				5D204285172942090070AB94 /* InfoPlist.strings in Resources */,
 				5D2042B7172968270070AB94 /* MainWindow.xib in Resources */,
 				5D2042C2172969410070AB94 /* JDPMainViewController.xib in Resources */,
 				5D2042C7172969CB0070AB94 /* JDPMenuViewController.xib in Resources */,
-				5D2042E117296DCE0070AB94 /* JDPChallengeListViewController.xib in Resources */,
-				5D2042E617296DF60070AB94 /* JDPChallengeCell.xib in Resources */,
-				5D2042EB17296E2C0070AB94 /* JDPChallengeStatusViewController.xib in Resources */,
 				5D2042F217296E650070AB94 /* JDPGameViewController.xib in Resources */,
-				5D2042F7172974700070AB94 /* background.jpg in Resources */,
-				5D2042F8172974700070AB94 /* background@2x.jpg in Resources */,
 				5D2042F9172974700070AB94 /* money.jpg in Resources */,
 				5D2042FA172974700070AB94 /* money@2x.jpg in Resources */,
+				5D1C439717F4624000B94C52 /* VERSION in Resources */,
+				5D1C439417F4624000B94C52 /* README in Resources */,
+				5D1C439217F4624000B94C52 /* ACKNOWLEDGEMENTS in Resources */,
 				5D204305172981BB0070AB94 /* JDPCreateChallengeViewController.xib in Resources */,
-				5D20432F1729F6720070AB94 /* button.png in Resources */,
-				5D2043301729F6720070AB94 /* button@2x.png in Resources */,
-				5D2043351729FBB40070AB94 /* buttonDisabled.png in Resources */,
-				5D2043361729FBB40070AB94 /* buttonDisabled@2x.png in Resources */,
-				5D2043371729FBB40070AB94 /* buttonHighlighted.png in Resources */,
-				5D2043381729FBB40070AB94 /* buttonHighlighted@2x.png in Resources */,
-				5D20433B172A02640070AB94 /* JDPLoadingCell.xib in Resources */,
-				5D2BDBB0172E82D20020C761 /* JDPNoChallengesCell.xib in Resources */,
+				5D1C439517F4624000B94C52 /* SmallBet.bundle in Resources */,
+				5D6B1D8C17EDAF9500E99BD1 /* Assets.xcassets in Resources */,
 				5D21904B172FCB7400A208CA /* JDPGameEndViewController.xib in Resources */,
-				5D21904E172FD3D300A208CA /* victoryPanel.png in Resources */,
-				5D21904F172FD3D300A208CA /* victoryPanel@2x.png in Resources */,
-				5D21905E17300A1C00A208CA /* radialGradient.png in Resources */,
-				5D21905F17300A1C00A208CA /* radialGradient@2x.png in Resources */,
+				5DB7B20C17EDF71A000FD6EF /* background.jpg in Resources */,
 				5DBA8BB31757711E0064CD95 /* JDPCreditsViewController.xib in Resources */,
-				5DBA8BC0175772230064CD95 /* cloud1.png in Resources */,
-				5DBA8BC2175772230064CD95 /* cloud1@2x.png in Resources */,
-				5DBA8BC4175772230064CD95 /* cloud2.png in Resources */,
-				5DBA8BC6175772230064CD95 /* cloud2@2x.png in Resources */,
-				5DBA8BC8175772230064CD95 /* cloud3.png in Resources */,
-				5DBA8BCA175772230064CD95 /* cloud3@2x.png in Resources */,
-				5DBA8BCC175772230064CD95 /* cloud4.png in Resources */,
-				5DBA8BCE175772230064CD95 /* cloud4@2x.png in Resources */,
-				5DBA8BD0175772230064CD95 /* cloud5.png in Resources */,
-				5DBA8BD2175772230064CD95 /* cloud5@2x.png in Resources */,
 				5DBA8BDC17578EF30064CD95 /* dollar.png in Resources */,
-				5D9683F61757B0BF008BEAB9 /* background_dark@2x.jpg in Resources */,
-				5D9683FA1757B102008BEAB9 /* background_dark.jpg in Resources */,
-				5D9683FC1757B632008BEAB9 /* Default-568h@2x.png in Resources */,
-				5D9683FD1757B63D008BEAB9 /* Default@2x.png in Resources */,
-				5D9683FE1757B643008BEAB9 /* Default.png in Resources */,
-				5D9684001757BCE9008BEAB9 /* icon@2x.png in Resources */,
-				5D9684021757BD1B008BEAB9 /* icon.png in Resources */,
-				5DA27AD517D0F1F90072C500 /* ACKNOWLEDGEMENTS in Resources */,
-				5DA27AD617D0F1F90072C500 /* CHANGES in Resources */,
-				5DA27AD717D0F1F90072C500 /* README in Resources */,
-				5DA27AD817D0F1F90072C500 /* SmallBet.bundle in Resources */,
-				5DA27AD917D0F1F90072C500 /* SmallBet.xcconfig in Resources */,
-				5DA27ADA17D0F1F90072C500 /* VERSION in Resources */,
+				5DB7B20D17EDF71A000FD6EF /* background@2x.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -731,19 +534,7 @@
 			files = (
 				5D2042A91729420A0070AB94 /* InfoPlist.strings in Resources */,
 				5DBA8BB41757711E0064CD95 /* JDPCreditsViewController.xib in Resources */,
-				5DBA8BC1175772230064CD95 /* cloud1.png in Resources */,
-				5DBA8BC3175772230064CD95 /* cloud1@2x.png in Resources */,
-				5DBA8BC5175772230064CD95 /* cloud2.png in Resources */,
-				5DBA8BC7175772230064CD95 /* cloud2@2x.png in Resources */,
-				5DBA8BC9175772230064CD95 /* cloud3.png in Resources */,
-				5DBA8BCB175772230064CD95 /* cloud3@2x.png in Resources */,
-				5DBA8BCD175772230064CD95 /* cloud4.png in Resources */,
-				5DBA8BCF175772230064CD95 /* cloud4@2x.png in Resources */,
-				5DBA8BD1175772230064CD95 /* cloud5.png in Resources */,
-				5DBA8BD3175772230064CD95 /* cloud5@2x.png in Resources */,
 				5DBA8BDD17578EF30064CD95 /* dollar.png in Resources */,
-				5D9683F71757B0BF008BEAB9 /* background_dark@2x.jpg in Resources */,
-				5D9683FB1757B102008BEAB9 /* background_dark.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -774,14 +565,10 @@
 				5D20428B172942090070AB94 /* JDPAppDelegate.m in Sources */,
 				5D2042C1172969410070AB94 /* JDPMainViewController.m in Sources */,
 				5D2042C6172969CB0070AB94 /* JDPMenuViewController.m in Sources */,
-				5D2042E017296DCE0070AB94 /* JDPChallengeListViewController.m in Sources */,
-				5D2042E417296DEA0070AB94 /* JDPChallengeCell.m in Sources */,
-				5D2042EA17296E2C0070AB94 /* JDPChallengeStatusViewController.m in Sources */,
 				5D2042F117296E650070AB94 /* JDPGameViewController.m in Sources */,
 				5D2042FE172978CE0070AB94 /* JDPGame.m in Sources */,
 				5D204304172981BB0070AB94 /* JDPCreateChallengeViewController.m in Sources */,
 				5D20432B172991B30070AB94 /* JDPFingerGestureRecognizer.m in Sources */,
-				5D2BDBB5172E94D90020C761 /* UIButton+theme.m in Sources */,
 				5D21904A172FCB7400A208CA /* JDPGameEndViewController.m in Sources */,
 				5DC750DD174559E8003BA8E2 /* AFHTTPClient.m in Sources */,
 				5DC750DE174559E8003BA8E2 /* AFHTTPRequestOperation.m in Sources */,
@@ -794,7 +581,6 @@
 				5DC750E5174559E8003BA8E2 /* UIImageView+AFNetworking.m in Sources */,
 				5DBA8BB11757711E0064CD95 /* JDPCreditsViewController.m in Sources */,
 				5DBA8BD6175788920064CD95 /* JDPMoneyEmitterView.m in Sources */,
-				5D96840D1758DC9D008BEAB9 /* JDPLoadingCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -805,7 +591,6 @@
 				5D2042AC1729420A0070AB94 /* MoneyHoleTests.m in Sources */,
 				5DBA8BB21757711E0064CD95 /* JDPCreditsViewController.m in Sources */,
 				5DBA8BD7175788920064CD95 /* JDPMoneyEmitterView.m in Sources */,
-				5D96840E1758DC9D008BEAB9 /* JDPLoadingCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -841,7 +626,7 @@
 /* Begin XCBuildConfiguration section */
 		5D2042AD1729420A0070AB94 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5DA27AD217D0F1F90072C500 /* SmallBet.xcconfig */;
+			baseConfigurationReference = 5D1C438F17F4624000B94C52 /* SmallBet.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -852,6 +637,7 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -864,7 +650,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -872,7 +658,7 @@
 		};
 		5D2042AE1729420A0070AB94 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5DA27AD217D0F1F90072C500 /* SmallBet.xcconfig */;
+			baseConfigurationReference = 5D1C438F17F4624000B94C52 /* SmallBet.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -889,7 +675,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
@@ -900,14 +686,18 @@
 		5D2042B01729420A0070AB94 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				COMPRESS_PNG_FILES = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/MoneyHole/SmallBet.embeddedframework\"",
+					"$(SRCROOT)/MoneyHole/SmallBet.embeddedframework",
+					"/Users/joel/Developer/smallbet-money-hole-ios/MoneyHole/SmallBet.embeddedframework",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MoneyHole/MoneyHole-Prefix.pch";
 				INFOPLIST_FILE = "MoneyHole/MoneyHole-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -916,14 +706,18 @@
 		5D2042B11729420A0070AB94 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				COMPRESS_PNG_FILES = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/MoneyHole/SmallBet.embeddedframework\"",
+					"$(SRCROOT)/MoneyHole/SmallBet.embeddedframework",
+					"/Users/joel/Developer/smallbet-money-hole-ios/MoneyHole/SmallBet.embeddedframework",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MoneyHole/MoneyHole-Prefix.pch";
 				INFOPLIST_FILE = "MoneyHole/MoneyHole-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

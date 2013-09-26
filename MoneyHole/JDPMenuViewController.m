@@ -12,27 +12,25 @@
 //controllers
 #import "JDPMainViewController.h"
 #import "JDPGameViewController.h"
-#import "JDPChallengeListViewController.h"
 #import "JDPCreateChallengeViewController.h"
 #import "JDPCreditsViewController.h"
 //models
 #import "JDPGame.h"
-#import "UIButton+theme.h"
 //protocols
-#import "JDPChallengeSelectionDelegate.h"
 
 @interface JDPMenuViewController ()
-<SBControllerDelegate, JDPChallengeSelectionDelegate, UIAlertViewDelegate>
+<SBControllerDelegate, UIAlertViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UIButton *practiseButton;
-@property (weak, nonatomic) IBOutlet UIButton *logoutButton;
-@property (weak, nonatomic) IBOutlet UIButton *loginButton;
+@property (weak, nonatomic) IBOutlet UIButton *accountButton;
 @property (weak, nonatomic) IBOutlet UIButton *challengeFriendButton;
 @property (weak, nonatomic) IBOutlet UIButton *challengeListButton;
 
 @property (nonatomic, strong) SBChallenge * observedChallenge;
 
 @property (nonatomic, strong) NSMutableArray * observers;
+
+@property (nonatomic) BOOL userIntendedToViewChallenges;
 @end
 
 @implementation JDPMenuViewController
@@ -65,15 +63,6 @@
     // Do any additional setup after loading the view from its nib.
     
     self.view.backgroundColor = [UIColor clearColor];
-    
-    NSArray * buttons = @[self.practiseButton, self.loginButton, self.logoutButton, self.challengeFriendButton, self.challengeListButton];
-    
-    
-    for (UIButton * button in buttons) {
-        [button jdpThemeButtonWithMoneyholeTheme];
-    }
-    
-    [self configureInterface];
 }
 
 -(void)viewWillAppear:(BOOL)animated{
@@ -117,16 +106,6 @@
                 }];
 
     [self.observers addObject:observer];
-
-    observer = [[NSNotificationCenter defaultCenter]
-                addObserverForName:SBUserDidGetLoggedOutNotification
-                object:nil
-                queue:[NSOperationQueue mainQueue]
-                usingBlock:^(NSNotification *note) {
-                    [self configureInterface];
-                }];
-    
-    [self.observers addObject:observer];
 }
 
 -(void)viewWillDisappear:(BOOL)animated{
@@ -147,29 +126,14 @@
 #pragma mark - JDPMenuViewController
 
 - (void)showChallengeListWithChallenge:(SBChallenge *)challenge {
-    JDPChallengeListViewController * challengeListViewController = [[JDPChallengeListViewController alloc] init];
+    SBChallengesViewController * challengeListViewController = [[SBChallengesViewController alloc] init];
     challengeListViewController.delegate = self;
 
-    UINavigationController * navigationController = [[UINavigationController alloc] initWithRootViewController:challengeListViewController];
-
-    NSString * imageFile = [[NSBundle mainBundle] pathForResource:@"background_dark" ofType:@"jpg"];
-    UIImage * backgroundImage = [UIImage imageWithContentsOfFile:imageFile];
-    UIImageView * backgroundImageView = [[UIImageView alloc] initWithImage:backgroundImage];
-    backgroundImageView.contentMode = UIViewContentModeBottom;
-    backgroundImageView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
-    CGRect backgroundImageFrame = navigationController.view.bounds;
-    // account for the height of the status bar
-    backgroundImageFrame = CGRectApplyAffineTransform(backgroundImageFrame, CGAffineTransformMakeTranslation(0, 20.0f));
-    backgroundImageFrame.size.height = CGRectGetHeight(backgroundImageFrame) - 20.0f;
-    backgroundImageView.frame = backgroundImageFrame;
-    backgroundImageView.clipsToBounds = YES;
-    [navigationController.view insertSubview:backgroundImageView atIndex:0];
-
     if (challenge) {
-        [challengeListViewController pushViewControllerForChallenge:challenge];
+        [challengeListViewController showDetailForChallenge:challenge];
     }
 
-    [self presentViewController:navigationController
+    [self presentViewController:challengeListViewController
                        animated:YES
                      completion:^{
 
@@ -192,17 +156,12 @@
 }
 
 - (IBAction)didTapLoginButton:(id)sender {
-    SBLoginViewController * loginViewController = [[SBLoginViewController alloc] initWithDelegate:self];
-    [self presentViewController:loginViewController
+    SBLoginViewController * accountViewController = [[SBLoginViewController alloc] initWithDelegate:self];
+    [self presentViewController:accountViewController
                        animated:YES
                      completion:^{
                          
                      }];
-}
-
-- (IBAction)didTapLogoutButton:(id)sender {
-    [[SBSmallbetManager defaultManager] logoutCurrentPlayer];
-    [self configureInterface];
 }
 
 - (IBAction)didTapChallengeFriendButton:(id)sender{
@@ -213,57 +172,57 @@
 }
 
 - (IBAction)didTapChallengeListButton:(id)sender {
+    if ([[SBSmallbetManager defaultManager] currentPlayer] == nil) {
+        self.userIntendedToViewChallenges = YES;
+        SBLoginViewController * loginViewController = [[SBLoginViewController alloc] initWithDelegate:self];
+        [self presentViewController:loginViewController
+                           animated:YES
+                         completion:^{
+                             
+                         }];
+        return;
+    }
     [self showChallengeListWithChallenge:nil];
-}
-
-#pragma mark - instance methods
-
--(void)configureInterface{
-    //if we have a logged in player then enable the play buttons
-    //and show the logout button.
-    
-    if ([[SBSmallbetManager defaultManager] currentPlayer]) {
-        self.logoutButton.hidden = NO;
-        self.loginButton.hidden = YES;
-        self.challengeFriendButton.enabled = YES;
-        self.challengeListButton.enabled = YES;
-    }
-    else{
-        self.logoutButton.hidden = YES;
-        self.loginButton.hidden = NO;
-        self.challengeFriendButton.enabled = NO;
-        self.challengeListButton.enabled = NO;
-    }
 }
 
 
 #pragma mark - SBControllerDelegate
 
 -(void)SBViewController:(UIViewController *)controller didFinishWithResult:(SBControllerResultType)result object:(id)object error:(NSError *)error{
-    switch (result) {
-        case SBControllerResultTypeSuccess:
-            [self configureInterface];
-            break;
-        case SBControllerResultTypeCanceled:
-        case SBControllerResultTypeFailed:
-        default:
-            break;
-    }
-
+    //This is the delegate method for all the smallbet controllers
+    //we can detect which one we are talking about by class
     [self dismissViewControllerAnimated:YES completion:^{
-
+        if ([controller isKindOfClass:[SBLoginViewController class]]) {
+            switch (result) {
+                case SBControllerResultTypeSuccess:
+                    if (self.userIntendedToViewChallenges) {
+                        [self showChallengeListWithChallenge:nil];
+                    }
+                    self.userIntendedToViewChallenges = NO;
+                    break;
+                case SBControllerResultTypeCanceled:
+                case SBControllerResultTypeFailed:
+                default:
+                    break;
+            }
+        }
+        if ([controller isKindOfClass:[SBChallengesViewController class]]) {
+            switch (result) {
+                case SBControllerResultTypeSuccess:{
+                    //when selecting challenges if the result is success then the object
+                    //is the SBChallenge the user has selected to play right now!!
+                    JDPGameViewController * gameViewController = [[JDPGameViewController alloc] init];
+                    gameViewController.challenge = object;
+                    [(id)self.parentViewController crossfadeToViewController:gameViewController];
+                }
+                    break;
+                case SBControllerResultTypeCanceled:
+                case SBControllerResultTypeFailed:
+                default:
+                    break;
+            }
+        }
     }];
-}
-
-#pragma mark - JDPChallengeListDelegate
-
--(void)controller:(JDPChallengeListViewController *)controller didSeletChallengeToPlay:(SBChallenge *)challenge{
-    [self dismissViewControllerAnimated:YES
-                             completion:^{
-                                 JDPGameViewController * gameViewController = [[JDPGameViewController alloc] init];
-                                 gameViewController.challenge = challenge;
-                                 [(id)self.parentViewController crossfadeToViewController:gameViewController];
-                             }];
 }
 
 #pragma mark - UIAlertViewDelegate

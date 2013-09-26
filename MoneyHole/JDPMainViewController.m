@@ -117,6 +117,11 @@
 }
 
 
+-(UIStatusBarStyle)preferredStatusBarStyle{
+    return UIStatusBarStyleLightContent;
+}
+
+
 #pragma mark - JDPMainViewController
 
 -(void)animateClouds{

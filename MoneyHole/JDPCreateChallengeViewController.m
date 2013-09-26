@@ -15,20 +15,18 @@
 #import "JDPGame.h"
 #import "AFNetworking.h"
 
-#import "UIButton+theme.h"
-
 @interface JDPCreateChallengeViewController ()
 <SBControllerDelegate, UIAlertViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UILabel *friendLabel;
 @property (weak, nonatomic) IBOutlet SBChallengeAmountSlider *challengeSlider;
+
 @property (weak, nonatomic) IBOutlet UIButton *cancelButton;
 @property (weak, nonatomic) IBOutlet UIButton *pickFriendButton;
+@property (weak, nonatomic) IBOutlet UIButton *smallBetChallengeButton;
 
 @property (nonatomic, strong) SBPlayer * pickedPlayer;
 @property (nonatomic, strong) SBChallenge * createdChallenge;
-
-@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *buttonsToTheme;
 
 @end
 
@@ -49,10 +47,7 @@
     // Do any additional setup after loading the view from its nib.
     self.view.backgroundColor = [UIColor clearColor];
     self.friendLabel.text = NSLocalizedString(@"Open Challenge", nil);
-    
-    for (UIButton * button in self.buttonsToTheme) {
-        [button jdpThemeButtonWithMoneyholeTheme];
-    }
+    self.view.translatesAutoresizingMaskIntoConstraints = NO;
 }
 
 - (void)didReceiveMemoryWarning
@@ -69,6 +64,76 @@
     if ([self.parentViewController respondsToSelector:@selector(crossfadeToViewController:)]) {
         [(id)self.parentViewController crossfadeToViewController:menuViewController];
     }
+}
+
+-(void)createChallenge{
+    self.smallBetChallengeButton.enabled = NO;
+    self.pickFriendButton.enabled = NO;
+    self.cancelButton.enabled = NO;
+
+    SBChallengeRequest * challengeRequest = [[SBChallengeRequest alloc] init];
+    challengeRequest.challengedPlayer = self.pickedPlayer;
+
+    JDPGame * game = [JDPGame randomGame];
+    challengeRequest.gameConfiguration = game.gameData;
+
+    challengeRequest.amountInGBP = self.challengeSlider.amountInGBP;
+
+    [SBChallenge challengeWithRequest:challengeRequest completion:^(SBChallenge *challenge, NSError *error) {
+        UIAlertView * alert = nil;
+        if (challenge) {
+            self.createdChallenge = challenge;
+            SBChallengeShareViewController * shareViewController = [[SBChallengeShareViewController alloc] initWithChallenge:self.createdChallenge];
+            shareViewController.delegate = self;
+            [self presentViewController:shareViewController
+                               animated:YES
+                             completion:^{
+
+                             }];
+        }
+        else if ([error.domain isEqualToString:AFNetworkingErrorDomain]) {
+            alert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Network Error", nil)
+                                               message:error.localizedDescription
+                                              delegate:nil
+                                     cancelButtonTitle:NSLocalizedString(@"Ah okay", nil)
+                                     otherButtonTitles:nil];
+        }
+        else if ([error.domain isEqualToString:SBErrorDomain]) {
+
+            switch (error.code) {
+                case SBErrorInvalidPlayerCredentials:{
+                    //the player has been logged out as their credentials are bad. Attempt to recover
+                    NSString * messageString = [NSString stringWithFormat:NSLocalizedString(@"You have been logged out of Small-Bet because %@", nil),[error localizedFailureReason]];
+                    alert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Could Not Create Challenge", nil)
+                                                       message:messageString
+                                                      delegate:self
+                                             cancelButtonTitle:NSLocalizedString(@"Return to Menu", nil)
+                                             otherButtonTitles:nil];
+                }
+                    break;
+                case SBErrorSizeTooLarge:
+                    //the payload was too large for the challenge
+
+                case SBErrorMissingInformation:
+                    //the challenge request was not filled in properly
+
+                default:{
+                    NSString * messageString = [NSString stringWithFormat:NSLocalizedString(@"We could not creat your challenge because %@", nil),[error localizedFailureReason]];
+                    alert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Could Not Create Challenge", nil)
+                                                       message:messageString
+                                                      delegate:self
+                                             cancelButtonTitle:NSLocalizedString(@"Return to Menu", nil)
+                                             otherButtonTitles:nil];
+                }
+                    break;
+            }
+        }
+        [alert show];
+
+        self.smallBetChallengeButton.enabled = YES;
+        self.pickFriendButton.enabled = YES;
+        self.cancelButton.enabled = YES;
+    }];
 }
 
 #pragma mark - target action
@@ -90,66 +155,18 @@
 }
 
 - (IBAction)challengeButtonTapped:(UIButton *)sender {
-    sender.enabled = NO;
-    self.pickFriendButton.enabled = NO;
-    self.cancelButton.enabled = NO;
-    
-    SBChallengeRequest * challengeRequest = [[SBChallengeRequest alloc] init];
-    challengeRequest.challengedPlayer = self.pickedPlayer;
-    
-    JDPGame * game = [JDPGame randomGame];
-    challengeRequest.gameConfiguration = game.gameData;
-    
-    challengeRequest.amountInGBP = self.challengeSlider.amountInGBP;
-    
-    [SBChallenge challengeWithRequest:challengeRequest completion:^(SBChallenge *challenge, NSError *error) {
-        UIAlertView * alert = nil;
-        if (challenge) {
-            self.createdChallenge = challenge;
-            SBChallengeShareViewController * shareViewController = [[SBChallengeShareViewController alloc] initWithChallenge:self.createdChallenge];
-            shareViewController.delegate = self;
-            [self presentViewController:shareViewController
-                               animated:YES
-                             completion:^{
 
-                             }];
-        }
-        else if ([error.domain isEqualToString:AFNetworkingErrorDomain]) {
-            alert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Network Error", nil)
-                                               message:error.localizedDescription
-                                              delegate:nil
-                                     cancelButtonTitle:NSLocalizedString(@"Ah okay", nil)
-                                     otherButtonTitles:nil];
-        }
-        else if ([error.domain isEqualToString:SBErrorDomain]) {
-            
-            switch (error.code) {
-                case SBErrorInvalidPlayerCredentials:{
-                    //the player has been logged out as their credentials are bad. Attempt to recover
-                    NSString * messageString = [NSString stringWithFormat:NSLocalizedString(@"You have been logged out because %@", nil),[error localizedFailureReason]];
-                    alert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Could Not Create Challenge", nil)
-                                                       message:messageString
-                                                      delegate:self
-                                             cancelButtonTitle:NSLocalizedString(@"Return to Menu", nil)
-                                             otherButtonTitles:nil];
-                }
-                    break;
-                case SBErrorSizeTooLarge:
-                    //the payload was too large for the challenge
-                    
-                case SBErrorMissingInformation:
-                    //the challenge request was not filled in properly
-                    
-                default:
-                    break;
-            }
-        }
-        [alert show];
-        
-        sender.enabled = YES;
-        self.pickFriendButton.enabled = YES;
-        self.cancelButton.enabled = YES;
-    }];
+    if ([[SBSmallbetManager defaultManager] currentPlayer] == nil) {
+        //player hasnt logged in yet
+        SBLoginViewController * loginController = [[SBLoginViewController alloc] initWithDelegate:self];
+        [self presentViewController:loginController
+                           animated:YES
+                         completion:^{
+                             
+                         }];
+        return;
+    }
+    [self createChallenge];
 }
 
 #pragma mark - SBControllerDelegate
@@ -182,6 +199,11 @@
                                      [self returnToMenuViewController];
                                  }];
         return;
+    }
+    else if ([controller isKindOfClass:[SBLoginViewController class]]){
+        if (object) {
+            [self createChallenge];
+        }
     }
 
     [self dismissViewControllerAnimated:YES
