@@ -1,97 +1,49 @@
+New in 1.3.5
+- Fix for play button not working when viewing challenges
+- Much improved SBChallengesViewController
+
+New in 1.3.4
+- Fixes for iOS 7 layout issues
+- Fixes for signup form
+
+New in 1.3.3
+- Fix for cell backgrounds being white sometimes in SBChallengesViewController
+- Fix for play button always being visible in SBChallengesViewController
+
+New in 1.3.2
+- New! List of challenges that are "actionable" i.e. can be played or accepted etc. Method is on SBChallenge.
+- New! SBChallengesViewController can now be configured to display only actionable challenges.
+- New! SBButton themed for playing a challenge
+- Fix for crash in signup form when viewing the T&C with a cell selected
+- Fix for tapping the next button in the form and losing form data
+- Fix for users accidently tapping the back button in signup form and losing all their data
+- Fix for cell explaining there are no challenges text being incorrect
+- Fix for the play button theme in the Challenge Detail View Controller
+
+New in 1.3.1
+- Fix for the sharing dialog not noticing text message shares.
+
 New in 1.3
+- New! list of challenges View Controller
+- New! accept and reject challenges screens (built into list view controller)
+- New! massive set of updates to the sharing screen to encourage more sharing of challenges.
+- Security! fixed cachcing of URL requests in plain text
 - enhancements to the signup form
 - enhancements to the T&C screen
-- fixed bug with login button on ios 5
-- [security] fixed cachcing of URL requests in plain text
-- *NEW* list of challenges View Controller
-- *NEW* accept and reject challenges screens (built into list view controller)
-- massive set of updates to the sharing screen to encourage more sharing of challenges.
+- Fix for bug with login button on ios 5
 
 New in 1.2.1
-- fixed bug where phone number would fail validation when it was really valid
+- Fix for bug where phone number would fail validation when it was really valid
 
 New in 1.2
-- Improved signup form. Now even more players will complete the signup form with in line errors and on the spot field validation
-- All cases of "E-mail" have been changed to Email
-- fixed a number of crashes
-- fixed a memory leak when polling for challenge updates
+- New! Improved signup form. Now even more players will complete the signup form with in line errors and on the spot field validation
+- Fix for all cases of "E-mail" have been changed to Email
+- Fix for a number of crashes
+- Fix for a memory leak when polling for challenge updates
 - improvements in memory usage when challenges have large payloads
 
 New in 1.1
-- New "I'm having trouble loging in" user help link in login screen
+- New! "I'm having trouble loging in" user help link in login screen
 - Better autocorrect settings in signup form
-- Documentation has now been reviewed and is now accurate
+- Documentation hass been reviewed and is now accurate
 - support for the new API response formats.
-
-
-New in 1.0
-- Framework can now optionally handle user state management. If you present the login view controller when the user is logged in you will now see a log out button.
-- the currentPlayer property on SBSmallBetManager is now guaranteed to have the players nickname filled in across launches! Feel free to greet your player by name!
-- removed the deprecated delegates protocol
-- the notifications for changes to challenges are now much more reliable.
-- +(void)fetchListOfChallengesWithCompletion:(void (^)(NSArray * challenges, NSError * error))completion; is now a method on SBChallenge, NOT SBSmallBetManager
-- SBButtons are now themed and have a fixed size. They will replace your IB buttons at the same centre point but will have their own dimensions.
-- fixed some layout issues on 3.5 inch devices
-- development started on a push notification system. It is not ready; if you use the public classes right now they will do nothing.
-
-New in 0.10
-- Updated the paypal library so it can be submitted to the app store.
-
-New in 0.9
-- Fixed bug with challenge notifications
-- Fixed the sharing view controller rotating
-- Improved the login journey.
-
-New in 0.8
-- SBSharingItem now conforms to UIActivityItemSource and should be easier for you to use. The sharing items can be pulled apart by you to make your own messages or given to the system UIActivityViewController, or given to our all new SBSharingViewController!
-- New NSNotification for NEW challenges! (challenges made against the player while app is open) so you can differentiate between updated challenges and NEW ones!
-- SBSharingViewcontroller is all new. 
-- Login Journey has been changed and is now better.
-
-New in 0.7
-- Refactored the delegate calls for the smallbet view controllers in to one method so that your delegate callbacks can be more DRY
-- fixes for signup form
-- API polling is more lightweight
-- challenge creation is more reliable
-- new SBSharingItem class for easier third party challenge sharing
-- There have been breaking changes in the API. This is now the minimum supported SDK version.
-- There is a new (but unfinished) SBChallengeShareViewController. This will be fixed in the next release.
-
-New in 0.6
-- SSL Pinning enabled for talking to the API.
-- SmallBet SDK is now beautiful!
-- setProductionKey:andSandboxKey: has been removed. Please use setSandboxKey:andProductionKey: instead. Production key is now optional
-- signup screen now requires users to accept T&Cs
-
-New in 0.5
-- currentPlayer is logged out if their payment method is removed. Always check server responses for invalid credentials and provide a way to return to the login screen
-- NSErrors generated by the framework are now more sensible and behave more like you would expect
-- set background of SBChallengeAmountSlider widget to transparent
-- fixed how this changes file is included in the SDK builds
-- fixed bug where people picker didn't fill screen on 3.5 inch devices
-- fixed a bug where getting the challenges list would return no array and no error for the case of no challenges
-- deprecated setProductionKey:andSandboxKey: . Use setSandboxKey:andProductionKey: instead. Production key is now optional
-
-New in 0.4
-- SBSmallBetManager can now handle URLs that open your app from the small bet website. Just forward the message to your app delegate to the SBSmallBetManager. If you want to use your own app URLs then handle them after the SBSmallBetManager
-- SDK detects running in the app store and selects your app key appropriately.
-- SBReplacementChallengeObjectKey became SBChallengeObjectKey
-- bugfixes.
-- guaranteed compatible with AFNetworking 1.2.1
-
-
-New in 0.3
-- SBSmallBetManager now posts notifications when the players challenges update. Check out the SBSmallBetManager header for more information
-  - This allows you to more easily keep your interface up to date with the current challenge state.
-- SBChallenge can now submit scores to Small Bet
-- Better small bet signup process
-- Calls to API are now SSL encrypted
-- the gameConfiguration property of SBChallenge is now filled in properly - you can now configure your game from a challenge!
-- sample PayPal accounts added to README. You can now log into smallbet as you can get a PayPal pre-approval for your account.
-- Social framework is weak linked for all you iOS 5 users
-
-New in 0.2
-- More SBButtons - buttons provided for accept and reject of challenge
-- SBChallenge now has methods for accept and reject
-- SBChallenge now has method for refreshing data
-- SBChallenge has methods for determining if accept or reject is possible

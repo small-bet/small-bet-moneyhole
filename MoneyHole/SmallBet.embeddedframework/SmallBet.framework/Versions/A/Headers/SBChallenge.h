@@ -33,6 +33,14 @@
 +(void)allChallengesWithCompletion:(void (^)(NSArray * challenges, NSError * error))completion;
 
 /**
+ This method fetches an array of all the player's actionable challenges.
+ @param completion A completion block that returns nil and is run when the response from the API has been processed. It has two arguements: challenges, the array of SBChallenge objects returned from the server and error, the error that occurred (if any). Either challenges or error will be nil.
+ 
+ @discussion The array of challenges is returned in date descending order. (IE newest challenges at the beginning) You can rely on this ordering.
+ */
++(void)actionableChallengesWithCompletion:(void (^)(NSArray * challenges, NSError * error))completion;
+
+/**
  This method is the method used to fetch individual challenge objects from the smallbet API.
 
  @param identifier the identifier of the challenge you want to fetch

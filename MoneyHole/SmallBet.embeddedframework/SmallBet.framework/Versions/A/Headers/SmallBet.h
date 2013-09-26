@@ -25,6 +25,7 @@
 #import "SBChallengeAmountSlider.h"
 
 //controllers
+#import "SBOnboardingViewController.h"
 #import "SBLoginViewController.h"
 #import "SBPlayerPickerViewController.h"
 #import "SBChallengeShareViewController.h"

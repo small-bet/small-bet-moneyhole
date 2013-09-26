@@ -43,7 +43,8 @@
 typedef NS_ENUM(NSUInteger, SBButtonType){
     SBButtonTypeChallenge = 100,
     SBButtonTypeAcceptChallenge = 101,
-    SBButtonTypeRejectChallenge = 102
+    SBButtonTypeRejectChallenge = 102,
+    SBButtonTypePlayChallenge = 103
 };
 
 @interface SBButton : UIButton
